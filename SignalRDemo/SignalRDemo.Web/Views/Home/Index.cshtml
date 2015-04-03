@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <h1>Move the Mouse inside the Box!</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <canvas id="heatMap" width="500" height="500" style="border: 1px solid black;"></canvas>
+    </div>
+</div>
+
+@section scripts{
+    <script src="~/Scripts/jquery.signalR-2.2.0.js"></script>
+    <script src="~/SignalR/Hubs"></script>
+    <script src="~/client/js/app.js"></script>
+}
